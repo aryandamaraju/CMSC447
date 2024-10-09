@@ -1,0 +1,90 @@
+.login-page{
+    background-color: #AEC8D6;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 400px;
+    flex-direction: column;
+    background-color: white;
+}
+
+.login-form{
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rbga(0,0,0,0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.login-form h2{
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #104D6A;
+}
+
+.login-form p{
+    font-size: 12px;
+    color: #104D6A;
+}
+
+.login-email{
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.login-email label{
+    font-size: 14px;
+    color: #104D6A;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.login-email input{
+    width: 100%;
+    padding: 10px;
+    border: 1px soild snow;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.login-password{
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.login-password label{
+    font-size: 14px;
+    color: #104D6A;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.login-password input{
+    width: 100%;
+    padding: 10px;
+    border: 1px soild snow;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.login-button {
+    background-color: #0F4D6B;
+    color: white;
+    border: none;
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    text-decoration: none;
+    outline: none;
+    margin-top: 20px
+}
