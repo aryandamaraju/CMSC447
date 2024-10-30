@@ -16,11 +16,16 @@ function Header(){
 
             <div className="search-container">
                 <input type="text" placeholder="Search" className="search-bar"/>
+                <div className="search-icon">
+
+                </div>
             </div>
+
             <div className="header-buttons">
                 <Link to="/cart">
                     <button className="button"><img style={{width:26, height:26}} src={cart} alt="Cart"/> </button>
                 </Link>
+                
                 <button className="button"><img style={{width:26, height:26}} src={star} alt="Star"/> </button>
 
                 <Link to="/login">

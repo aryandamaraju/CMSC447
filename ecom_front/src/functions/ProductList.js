@@ -1,5 +1,4 @@
 import React from 'react';
-import './ProductList.css';
 import List from './List';
 import { Link } from 'react-router-dom';
 
@@ -17,7 +16,7 @@ function ProductList({products}){
                     category={category}
                     image={image}
                 />
-            )):<p> Loadi..</p>}
+            )):<p> Loading...</p>}
             
         </div>
     );

@@ -12,6 +12,7 @@ export default function Home(){
     useEffect(() => {
         const fetchProducts = async () => {
             try {
+                //ALAN -> FETCHING FROM WEBSTIE
                 const response = await fetch("https://fakestoreapi.com/products");
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
