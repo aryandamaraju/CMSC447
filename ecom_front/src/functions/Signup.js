@@ -29,14 +29,14 @@ function Signup(){
 
             <div className="signup-password">
                 <label>Password *</label>
-                <input type="email" placeholder="Enter your Email" required  />
+                <input type="email" placeholder="Enter your Password" required  />
             </div>
 
             <div className = "customer">
                 <label>Sign up as: </label>
                 <select value={userType} onChange={handleUserTypeChange} required className='customer-selection'>
-                    <option value="customer">Customer</option>
-                    <option value="vendor">Vendor</option>
+                    <option value="Customer">Customer</option>
+                    <option value="Vendor">Vendor</option>
                 </select>
             </div>
 

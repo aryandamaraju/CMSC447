@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 
 import cart from "./img/cart.png"
 import star from "./img/star.png"
-import logo from "./img/logo.png"
+import logo from "./img/Insta Hub Logo.png"
 import loginIcon from "./img/login.png"
 
 function Header(){
     return(
-        <div className="header">
+        <div className="header-bar">
             <Link to="/home">
                 <div> <img style={{width:120, height:50}} src={logo} alt="Logo"/></div>
             </Link>

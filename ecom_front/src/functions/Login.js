@@ -1,30 +1,54 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Login.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate} from 'react-router-dom';
 
 function Login(){
+    const [email, setEmail] =useState('');
+    const [password, setPassword] =useState('');
+    const Navigate = useNavigate();
+
+    const handleLogin = (event) => {
+        event.preventDefault();
+
+        if(email=== "123@umbc.edu" && password === "123"){
+            Navigate("/home");
+        }else{
+            alert("Invalid email or Password");
+        }
+    };
+
     return(
         <div className="login-page">
             <div className="login-container">
-                <from className="login-form">
+                <form className="login-form" onSubmit={handleLogin}>
                     <h2>Log In</h2>
                     <p>New to this site? <Link to="/signup">Sign Up</Link></p>
 
                     <div className="login-email">
                         <label>Email *</label>
-                        <input type="email" placeholder="Enter your Email" required  />
+                        <input 
+                            type="email" 
+                            placeholder="Enter your Email" 
+                            required 
+                            value={email}
+                            onChange={(e)=>setEmail(e.target.value)} 
+                        />
                     </div>
 
-                    <dic className="login-password">
+                    <div className="login-password">
                         <label>Password *</label>
-                        <input type="password" placeholder="Enter your Password" required />
-                    </dic>
+                        <input 
+                            type="password" 
+                            placeholder="Enter your Password" 
+                            required 
+                            value={password}
+                            onChange={(e)=>setPassword(e.target.value)}
+                            />
+                    </div>
 
-                    <Link to="/home">
-                        <button className="login-button"> Login</button>
-                    </Link>
+                    <button type="submit" className="login-button"> Login</button>
 
-                </from>
+                </form>
             </div>
         </div>
     )

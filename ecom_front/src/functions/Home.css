@@ -1,5 +1,12 @@
 .home-page{
     background-color: white;
     display: flex;
-    height: 100vh;
+    flex-direction: column;
+    
+}
+
+.product-list{
+    flex-grow: 1;
+    overflow-y: auto;
+    align-self: center;
 }
