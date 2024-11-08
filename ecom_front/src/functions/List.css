@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Styles for the container to align items in a grid */
 .list-container {
     display: flex;
@@ -69,4 +70,63 @@
     justify-content: space-around;
     padding: 20px;
     background-color: #f3f3f3;
+=======
+.list-container {
+    display: flex; 
+    align-items: center; 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    margin: 10px ;
+    width: 1000px;
+    background-color: white;
+    border-radius: 1%;
+    
+}
+
+.list-image {
+    flex: 0 0 200px; 
+    margin-right: 20px; 
+    border-style: double;
+}
+
+.list-details {
+    flex: 1; 
+    display: flex; 
+    flex-direction: column;
+}
+
+.list-category {
+    font-weight: bold;
+    color: gray;
+    font-size: 10px;
+    text-decoration: underline;
+}
+
+.list-title {
+    font-size: 1.2em; 
+    margin: 5px 0; 
+}
+
+.list-description {
+    font-size: 0.9em; 
+    color: #666; 
+}
+
+.list-price {
+    font-weight: bold; 
+    margin: 10px 0; 
+}
+
+.list-button {
+    background-color:  rgb(19, 84, 79);
+    color: white; 
+    border: none; 
+    padding: 10px; 
+    cursor: pointer; 
+    margin-top: 10px; 
+}
+
+.list-button:hover {
+    background-color: #16781a; 
+>>>>>>> d36013e9f7fec8aa315aa7565e60ed5b43019ea6
 }

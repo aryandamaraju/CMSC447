@@ -1,7 +1,10 @@
 .header-bar{
     display:flex;
     height: 50px;
+<<<<<<< HEAD
     width: 100vw;
+=======
+>>>>>>> d36013e9f7fec8aa315aa7565e60ed5b43019ea6
     background-color: rgb(19, 84, 79);
 }
 

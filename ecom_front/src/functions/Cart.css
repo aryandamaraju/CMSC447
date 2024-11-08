@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .cart-page{
     background-color: white;
     height: 100vh;
@@ -13,4 +14,14 @@
 .cart-container h1{
     font-size: 50px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+=======
+.cart h2{
+    justify-content: center;
+    margin-left: 50%;
+}
+
+.cart-items{
+ justify-content: center;
+ display: flex;   
+>>>>>>> d36013e9f7fec8aa315aa7565e60ed5b43019ea6
 }

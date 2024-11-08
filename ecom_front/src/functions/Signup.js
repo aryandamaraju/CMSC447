@@ -40,7 +40,7 @@ function Signup(){
                 </select>
             </div>
 
-            <Link to="/home">
+            <Link to="/Login">
                 <button className="signup-button"> Sign Up</button>
             </Link>
             </div>

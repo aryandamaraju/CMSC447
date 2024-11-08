@@ -8,11 +8,11 @@ export default function Home(){
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const [searchQuery, setSearchQuery] = useState('');
 
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                //ALAN -> FETCHING FROM WEBSTIE
                 const response = await fetch("https://fakestoreapi.com/products");
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
@@ -32,11 +32,13 @@ export default function Home(){
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error: {error}</p>;
 
+    const filterProducts = products.filter(product => product.title.toLowerCase().includes(searchQuery.toLowerCase()));
+
     return(
         <div className="home-page">
-            <Header />
+            <Header setSearchQuery={setSearchQuery}/>
             <div className="product-list">
-                <ProductList products={products}/>
+                <ProductList products={filterProducts}/>
             </div>
         </div>
     )
