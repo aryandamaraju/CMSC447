@@ -1,0 +1,9 @@
+.cart h2{
+    justify-content: center;
+    margin-left: 50%;
+}
+
+.cart-items{
+ justify-content: center;
+ display: flex;   
+}
